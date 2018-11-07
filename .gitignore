@@ -1,6 +1,10 @@
-/css
+
 /js
 *.md
 *.txt
 LICENSE
 /my_test
+/img
+.jpg
+.jpeg
+.png

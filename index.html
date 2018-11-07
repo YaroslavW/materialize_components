@@ -31,6 +31,14 @@
       <li><a href="collapsible.html">Support</a></li>
       <li><a href="mobile.html">Product</a></li>
     </ul>
+        <!-- Carousue -->
+      <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="img/pic1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="img/pic2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="img/pic3.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="img/pic4.jpg"></a>
+  </div>
+
     <!-- Content -->
     <div class="container">
       <div class="row">
@@ -64,6 +72,23 @@
         </div>
       </div>
     </div>
+      <!-- Paralax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/pic1.jpg">
+      </div>
+    </div>
+      <div class="sectin white">
+        <div class="row container">
+          <h1 class="header">Paralax</h1>
+          <p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis vero vel totam sed rem nisi consequuntur aperiam voluptas, corporis magni dignissimos placeat cum at soluta facere, porro libero eius, enim tempora nihil? Dolorum accusantium tenetur magni numquam ipsam ea optio.</p>
+        </div>
+      </div>
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/pic2.jpg">
+      </div>
+    </div>
     <!-- jQuery before Materialize-->
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -76,7 +101,15 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $('.sidenav').sidenav();
+        $('.parallax').parallax();
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true,
+            duration: 600
+        });
       });
+
+
 
     </script>
   </body>
