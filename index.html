@@ -94,8 +94,34 @@
     <!-- Modal  -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia culpa sit, deserunt recusandae odit ratione accusamus. Nemo iure odio aliquam autem vero commodi harum quibusdam cumque molestias voluptates, error blanditiis deleniti numquam accusamus possimus doloremque dignissimos, ad inventore reprehenderit debitis.</p>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="first_name" type="text" class="validate" placeholder ="Name">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="last_name" type="text" class="validate" placeholder ="LastName">
+            <label for="last_name">Last Name</label>
+          </div>          
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input type="text" id="password" class="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mail</i>
+            <input type="text" id="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>        
+      </form>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
