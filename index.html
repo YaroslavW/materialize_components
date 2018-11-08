@@ -21,6 +21,7 @@
           <li><a href="badges.html">About Us</a></li>
           <li><a href="collapsible.html">Support</a></li>
           <li><a href="mobile.html">Product</a></li>
+          <li><a class="modal-trigger" href="#modal1">Modal</a></li>
         </ul>
       </div>
     </nav>
@@ -89,6 +90,18 @@
         <img src="img/pic2.jpg">
       </div>
     </div>
+
+    <!-- Modal  -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia culpa sit, deserunt recusandae odit ratione accusamus. Nemo iure odio aliquam autem vero commodi harum quibusdam cumque molestias voluptates, error blanditiis deleniti numquam accusamus possimus doloremque dignissimos, ad inventore reprehenderit debitis.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
     <!-- jQuery before Materialize-->
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -102,6 +115,14 @@
       $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.parallax').parallax();
+        $('.modal').modal({
+          dismissible: false,
+          opacity:0.8,
+          inDuration: 1000,
+          outDuration: 500,
+          startingTop: '70%',
+          // endingTop: '10%'
+        });
         $('.carousel.carousel-slider').carousel({
             fullWidth: true,
             indicators: true,
