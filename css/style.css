@@ -11,3 +11,12 @@ nav {
 .parallax-container {
 	height: 300px;
 }
+/*Color for bottons pulsation*/
+.waves-effect.waves-mycolor .waves-ripple {
+	background-color: #f003ff; 
+}
+
+.opacity {
+	opacity: 0;
+	transition-duration: 5s;
+}

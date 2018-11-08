@@ -5,6 +5,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -148,7 +150,7 @@
 
       <div class="divider"></div>
       <!-- 4 column -->
-       <!-- img must be the same size. -->
+      <!-- img must be the same size. -->
       <div class="row">
         <div class="col s3">
           <div class="card hoverable">
@@ -209,6 +211,16 @@
       </div>
     </div>
     <div class="divider"></div>
+    <div class="container">
+      <a href="#!" class="btn-large waves-effect waves-light light-green">Click</a>
+      <a href="#!" class="btn-large waves-effect waves-red light-green">Click</a>
+      <a href="#!" class="btn-large waves-effect waves-red waves-mycolor ">Click</a>
+      <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Text</a>
+      <div class="divider"></div>
+      <a href="#!" class="btn-large waves-effect waves-light light-green" onclick="change_class()">Click</a>
+      <img id="fadeImg" src="img/pic2.jpg">
+    </div>
+
     <!-- jQuery before Materialize-->
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -222,6 +234,7 @@
       $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.parallax').parallax();
+        $('.tooltipped').tooltip();
         $('.modal').modal({
           dismissible: false,
           opacity:0.8,
@@ -237,8 +250,14 @@
         });
       });
 
+      function change_class(){
+ // const img = document.getElementById('fadeImg');
+ // img.classList.add('opacity'); 
+  // without jQuery
 
+        $('#fadeImg').toggleClass('opacity');
+      }
 
-    </script>
-  </body>
-  </html>
+</script>
+</body>
+</html>
