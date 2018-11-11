@@ -20,3 +20,8 @@ nav {
 	opacity: 0;
 	transition-duration: 5s;
 }
+
+.opacity1 {
+	opacity: 1;
+	transition-duration: 5s;	
+}
